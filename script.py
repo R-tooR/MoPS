@@ -74,7 +74,6 @@ def estimate(hypocenter, stations, initial=None):
         zz.append(z0)
         tcal_.append(tcal)
         iterations = iterations + 1
-        print(x0, ' ', y0, ' ', z0)
         error.append(err)
         # loop is broken if difference between errors is smaller than threshold
         if np.abs(err - error[len(error) - 2]) < err_threshold:
